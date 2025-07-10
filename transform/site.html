@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visualizador</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#2196f3" />
+  <link rel="icon" href="icon-192.png" />
+
+  <style>
+    body, html {
+      margin: 0;
+      height: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="siteFrame"></iframe>
+
+  <script>
+    const link = localStorage.getItem("userLink");
+    if (link) {
+      document.getElementById("siteFrame").src = link;
+    } else {
+      document.body.innerHTML = "<h2>Nenhum link definido.</h2>";
+    }
+  </script>
+</body>
+</html>

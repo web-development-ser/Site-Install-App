@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu App Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#2196f3">
-  <link rel="icon" href="icon-192.png">
+    <link rel="stylesheet" href="./src/style.css">
 
 </head>
 <body>
-  <h1>Carregando site...</h1>
 
-  <!-- Redireciona automaticamente para o site -->
-  <script>
-    window.location.href = "https://www.google.com/";
-  </script>
+    <main class="container">
+        <section>
+            <h1>Digite o link do site</h1>
+            <input id="urlInput" type="url" placeholder="https://exemplo.com" oninput="showFavicon()">
+            <br>
+            <button id="acess">Acessar</button>
+            <br>
+            <img id="faviconPreview" src="" alt="Favicon">
+        </section>
+    </main>
+
+    <script src="./src/script.js"></script>
 </body>
 </html>

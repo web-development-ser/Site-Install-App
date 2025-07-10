@@ -1,6 +1,6 @@
 {
-  "name": "Google WebApp",
-  "short_name": "Google",
+  "name": "App WebView Dinâmico",
+  "short_name": "WebApp",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
